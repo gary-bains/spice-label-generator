@@ -247,7 +247,8 @@ const SpiceLabelGenerator = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+      <div className="max-w-6xl w-full bg-white rounded-lg shadow-lg p-6">
       <div className="flex items-center gap-3 mb-8">
         <Leaf className="text-emerald-500" size={32} />
         <h1 className="text-3xl font-light text-gray-800">Spice Label Generator</h1>
@@ -436,6 +437,7 @@ const SpiceLabelGenerator = () => {
         ref={canvasRef}
         style={{ display: 'none' }}
       />
+      </div>
     </div>
   );
 };
